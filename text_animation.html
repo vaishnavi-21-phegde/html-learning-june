@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text_animation</title>
+    <style>
+#txt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    letter-spacing: 4px;
+    font-size: 70px;
+    font-weight: 700;
+    position: relative;
+    transform-style: preserve-3d;
+    -webkit-perspective: 100px;
+     background-color: aqua; 
+     /* text-shadow:blue ; */
+}
+#txt >b{
+    height: 80px;
+    box-shadow: 0px 30px 15px gray;
+    color: azure;
+    background-color: red; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-transform-origin: bottom;
+    transform: rotateX(-85deg);
+    transform:rotateX(-85deg) ; 
+    animation: getUp;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}
+#txt>b:nth-child(1){
+    animation-delay: 0s;
+}
+#txt>b:nth-child(2){
+    animation-delay: 0.25s;
+}
+#txt>b:nth-child(3){
+    animation-delay: 0.50s;
+}
+#txt>b:nth-child(4){
+    animation-delay: 0.75s;
+}
+#txt>b:nth-child(5){
+    animation-delay: 1s;
+}
+#txt>b:nth-child(6){
+    animation-delay: 1.25s;
+}
+#txt>b:nth-child(7){
+    animation-delay: 1.50s;
+}
+#txt>b:nth-child(8){
+    animation-delay:1.75s;
+}
+#txt>b:nth-child(9){
+    animation-delay: 2s;
+}
+@keyframes getUp{
+    10%,50%{
+        transform: rotateX(0);
+    }
+    0%,60%,100%{
+        transform: rotateX(-85deg);
+    }
+}
+
+    </style>
+
+</head>
+<body>
+    <div id="txt">
+        <b>V</b> <b>A</b> <b>I</b> <b>S</b> <b>H</b> <b>N</b> <b>A</b> <b>V</b> <b>I</b>
+        </div>
+</body>
+</html>

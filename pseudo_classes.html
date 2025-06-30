@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo_classes</title>
+    <style>
+.hover_effect:hover{
+    color: red;
+    background-color: skyblue;
+    font-size: 60px;
+    text-shadow: 4px 3px 8px blue;
+    text-align: center;
+}
+.hover_effect{
+    color: blue;
+}
+button{
+    background-color: green;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+button:active{
+    background-color: blue;
+    font-size: 40px;
+    padding: 20px;
+    color: white;
+    border-radius: 20px;
+}
+a:visited{
+    color: green;
+
+}
+input:focus{
+    background-color:yellow ;
+}
+ul{
+    width: 300px; 
+    padding: 10px;
+    list-style-type: none;
+}
+li{
+    padding: 10px;
+    border:2px solid  red;
+    margin-bottom: 10px;
+    border-radius: 10px;
+
+}
+li:nth-child(odd){
+
+background-color: skyblue;
+}
+li:nth-child(even){
+    background-color: lightpink;
+
+}
+li:nth-child(5){
+    background-color: grey;
+
+}
+li:first-child{
+background-color: greenyellow;
+color: black;
+}
+li:last-child{
+    background-color: orange;
+    color: black;
+}
+input[type="text"]{
+    border:8px solid green;
+    padding: 15px;
+
+}
+input[placeholder]{
+background-color:yellow;
+color: black;
+box-shadow:4px 3px 6px orange;
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="Enter Name">
+        <!-- ul>li*10{item $}   -10 times generater-->
+  
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+        <li>item 6</li>
+        <li>item 7</li>
+        <li>item 8</li>
+        <li>item 9</li>
+        <li>item 10</li>
+    </ul>
+
+    <a href="http://www.awwwards.com/">click here</a>
+    <h1 class="hover_effect">Hello welcome Ashwini and shruti</h1>
+    <button>click me</button>
+</body>
+</html>

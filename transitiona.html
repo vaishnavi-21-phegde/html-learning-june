@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+    gap: 10px;
+}
+.box{
+    background-color:rebeccapurple;         
+    border-radius: 10px;
+    height: 200px;
+    width: 200px;
+    color: white;
+  font-size: 25px;
+    font-weight: 900px;
+    transition: transform  2s ease;
+
+   
+}
+
+.box1:hover{
+    transform: translate(700px,125px);
+    background-color: green;
+}
+.box2:hover{
+    transform: translate(500px);
+    }
+    .box3:hover{
+    transform: translate(600px);
+    }
+    .box4:hover{
+    transform: Rotate(360deg);
+    background-color: aqua;
+    box-shadow: 2px 3px 5px red;
+    }
+    .box5:hover{
+    transform: skew(60deg);
+    }
+    .box6:hover{
+    transform: scale(3);
+    box-shadow: 6px 5px 2px purple;
+    }
+    .box7:hover{
+    transform: Rotate(60deg) scale(2) translate(50px);
+    text-align: center;
+    background-color: blueviolet;
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+   <div class="box box1">translate</div> 
+   <div class="box box2">translate X</div>
+   <div class="box box3">translate Y</div>
+   <div class="box box4">Rotate</div>
+   <div class="box box5">skew X</div>
+    <div class="box box6">scale</div>
+    <div class="box box7">Multi function</div>
+ </div>
+    
+</body>
+</html>

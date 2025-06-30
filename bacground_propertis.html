@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-propertis</title>
+    <style>
+        div{
+            color: white;
+            text-align: center;
+            font-size: 30px;
+        }
+        .linear{
+            height: 300px;
+            border: 20x solid black;
+            background: linear-gradient(to left,green,black);
+        }
+      .radial{
+            height: 500px;
+            border: 20x solid black;
+            background: radial-gradient( ellipse,black,red,orange,yellow);
+            border-radius: 50%;
+      }
+     
+      .conic{
+        height: 500px;
+        background: conic-gradient(from 90deg,black,green,blue,blueviolet);
+        text-align: center;
+        color: white;
+
+      }
+            </style>
+</head>
+<body>
+   <div class="conic">Radial Gradient example</div> 
+   
+      <div class="radial">Radial Gradient example</div> 
+  <div class="linear">Linear Gradient example
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus aut quam voluptates magnam eaque odit rerum laboriosam possimus error magni, quasi atque similique modi, optio assumenda accusamus. Necessitatibus, perferendis voluptas.</p>
+  </div>
+</body>
+</html>
